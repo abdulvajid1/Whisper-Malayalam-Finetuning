@@ -1152,6 +1152,27 @@ wheels = [
 ]
 
 [[package]]
+name = "peft"
+version = "0.15.2"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "accelerate" },
+    { name = "huggingface-hub" },
+    { name = "numpy" },
+    { name = "packaging" },
+    { name = "psutil" },
+    { name = "pyyaml" },
+    { name = "safetensors" },
+    { name = "torch" },
+    { name = "tqdm" },
+    { name = "transformers" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/33/65/faa18cd8ffbe0f742c3f2559770646cce2574b9cd28a2a05e8d36f64e968/peft-0.15.2.tar.gz", hash = "sha256:7059029f4d42a092ded1aa117dd366a46084aef638bdd593f6ab0195d5427fcd", size = 472952, upload-time = "2025-04-15T15:27:53.09Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/68/85/8e6ea3d1089f2b6de3c1cd34bbbd7560912af9d34b057be3b8b8fefe1da3/peft-0.15.2-py3-none-any.whl", hash = "sha256:0dfc942b03b7af4b7267cd4e30b15e3a4a1d277adc581ce6245fc13f1f93d0a0", size = 411051, upload-time = "2025-04-15T15:27:50.799Z" },
+]
+
+[[package]]
 name = "pexpect"
 version = "4.9.0"
 source = { registry = "https://pypi.org/simple" }
@@ -1980,6 +2001,7 @@ dependencies = [
     { name = "ipywidgets" },
     { name = "jiwer" },
     { name = "librosa" },
+    { name = "peft" },
     { name = "pip" },
     { name = "soundfile" },
     { name = "tensorboardx" },
@@ -1996,6 +2018,7 @@ requires-dist = [
     { name = "ipywidgets", specifier = ">=8.1.7" },
     { name = "jiwer", specifier = ">=3.1.0" },
     { name = "librosa", specifier = ">=0.11.0" },
+    { name = "peft", specifier = ">=0.15.2" },
     { name = "pip", specifier = ">=25.1.1" },
     { name = "soundfile", specifier = ">=0.13.1" },
     { name = "tensorboardx", specifier = ">=2.6.4" },
